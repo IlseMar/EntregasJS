@@ -1,14 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <title>Chromati.ca</title>
   </head>
   <body>
-    <h1>Simulador</h1>
-    <h2>Catálogo de compra</h2>
-    <script src="./catalogoCompras.js"></script>
+    <h1>Carrito de Compras</h1>
+
+    <div class="product">
+      <h2>Fundas para Celular</h2>
+      <label for="modelo-celular">Modelo de Celular:</label>
+      <select id="modelo-celular">
+        <option value="samsung">Samsung</option>
+        <option value="huawei">Huawei</option>
+        <option value="xiaomi">Xiaomi</option>
+        <option value="iphone">iPhone</option>
+        <option value="motorola">Motorola</option>
+      </select>
+
+      <label for="diseño-funda">Tipo de Diseño:</label>
+      <select id="diseño-funda">
+        <option value="basico">Básico</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="super">Súper</option>
+      </select>
+
+      <label for="unidades-funda">Unidades:</label>
+      <input type="number" id="unidades-funda" min="1" value="1" />
+
+      <button id="agregar-funda">Agregar Funda</button>
+    </div>
+
+    <div class="product">
+      <h2>Espejos</h2>
+      <label for="tamaño-espejo">Tamaño:</label>
+      <select id="tamaño-espejo">
+        <option value="chico">Chico</option>
+        <option value="mediano">Mediano</option>
+        <option value="grande">Grande</option>
+      </select>
+
+      <label for="diseño-espejo">Tipo de Diseño:</label>
+      <select id="diseño-espejo">
+        <option value="basico">Básico</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="super">Súper</option>
+      </select>
+
+      <label for="unidades-espejo">Unidades:</label>
+      <input type="number" id="unidades-espejo" min="1" value="1" />
+
+      <button id="agregar-espejo">Agregar Espejo</button>
+    </div>
+
+    <h2>Carrito de Compras</h2>
+    <ul id="carrito"></ul>
+    <h3>Total: <span id="total">0</span> MXN</h3>
+    <script src="./preEntregaDos.js"></script>
   </body>
 </html>

@@ -5,3 +5,16 @@ h1 {
 h2 {
   color: blueviolet;
 }
+.product {
+  margin-bottom: 20px;
+}
+h3 {
+  color: crimson;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+  color: seagreen;
+}
